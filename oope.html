@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        class Student {
+            constructor(s_id, s_name, s_email, s_number) {
+                this.name = s_name;
+                this.id = s_id
+                this.email = s_email;
+                this.p_number = s_number;
+                this.match = 0;
+                this.English = 0;
+                this.Gujrati = 0;
+                this.hindi = 0;
+            }
+
+
+
+            mark_match(s_match) {
+                this.match = s_match;
+            }
+            mark_english(s_english) {
+                this.English = s_english;
+            }
+            mark_gujrati(s_gujrati) {
+                this.gujrati = s_gujrati;
+            }
+             marK_hindi(s_hindi) {   
+                this.hindi = s_hindi; }
+
+            resultAvg() {
+                return `${((this.match + this.English + this.gujrati + this.hindi) / 300)}`;
+            }
+
+            resultPer() {
+                return `${((this.match + this.English+ this.gujrati+ this.hindi) / 400) * 100}`;
+            }
+        }
+        var student_1 = new Student("5684", "Smith desai", "smith@gmail.com", "9081870470", "12th");
+
+        student_1.mark_match(80);
+        student_1.mark_english(60);
+        student_1.mark_gujrati(40);
+        student_1.marK_hindi(56);
+
+        console.log(student_1);
+        console.log("Average of student_1 : " + student_1.resultAvg());
+        console.log("Percentage of student_1 : " + student_1.resultPer());
+
+
+
+
+
+
+var student_2 = new Student("5834", "Sahil desai", "sahil@gmail.com", "902470470", "12th");
+
+student_2.mark_match(70);
+student_2.mark_english(50);
+student_2.mark_gujrati(60);
+student_2.marK_hindi(86);
+
+console.log(student_2);
+console.log("Average of student_2 : " + student_2.resultAvg());
+console.log("Percentage of student_2 : " + student_2.resultPer());
+
+
+
+var student_3 = new Student("5654", "meet desai", "meet@gmail.com", "9081870470", "12th");
+
+student_3.mark_match(50);
+student_3.mark_english(40);
+student_3.mark_gujrati(60);
+student_3.marK_hindi(58);
+
+console.log(student_3);
+console.log("Average of student_3 : " + student_3.resultAvg());
+console.log("Percentage of student_3 : " + student_3.resultPer());
+
+var student_4 = new Student("5686", "kaushal desai", "kushal@gmail.com", "9015214666", "12th");
+
+student_4.mark_match(80);
+student_4.mark_english(60);
+student_4.mark_gujrati(40);
+student_4.marK_hindi(56);
+
+console.log(student_4);
+console.log("Average of student_4 : " + student_4.resultAvg());
+console.log("Percentage of student_4 : " + student_4.resultPer());
+
+var student_5 = new Student("5686", "granth desai", "granth@gmail.com", "901521466", "12th");
+
+student_5.mark_match(80);
+student_5.mark_english(60);
+student_5.mark_gujrati(40);
+student_5.marK_hindi(56);
+
+console.log(student_5);
+console.log("Average of student_5 : " + student_5.resultAvg());
+console.log("Percentage of student_5 : " + student_5.resultPer());
+
+
+
+    </script>
+</body>
+
+</html>
